@@ -1,0 +1,56 @@
+Javascript tips
+
+//for defining user inputs as functions
+
+function //func_name()
+{
+var input = document.getElementById("userInput").value;
+alert(input);
+}
+
+
+//for ensuring integers are used 
+function get//func_name of specific input//() {
+var nameField = document.getElementById('nameField').value;
+var result = document.getElementById('result');
+
+if (nameField.length < 3) {
+    result.isInteger() //change the following to allow code to continue //= 'Username must contain at least 3 characters';
+    //alert('Username must contain at least 3 characters');
+} else {
+    result.textContent = 'You must enter a number';
+    //alert(nameField);
+}
+}
+
+//event listener for calculation (or other) button
+var subButton = document.getElementById('subButton');
+subButton.addEventListener('click', getUserName, false); 
+
+//html code explaining button etc.
+<!DOCTYPE html>
+<html>
+<body>
+
+<p><input type="text" placeholder ="username" id="userinput">
+    <button id="demo">click me</button></p>
+
+    <script>
+        document.getElementById("demo").onclick = function(){
+        var user = document.getElementById("userinput").value;
+         alert(user);
+
+       }
+    </script>
+
+</body>
+</html> 
+
+<script>
+    document.getElementById("demo").onclick = function(){
+    var user = document.getElementById("userinput").value;
+     alert(user);
+
+   }
+</script>
+
