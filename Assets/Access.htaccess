@@ -1,4 +1,4 @@
 AuthType Basic
 AuthName "Authentication Required"
-AuthUserFile C:\Users\dispo\Documents\etc\.htpasswd
+AuthUserFile .\.htpasswd
 Require valid-user
